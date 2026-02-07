@@ -106,9 +106,6 @@ while running:
                                 del animals[n]
                                 world.grid[y, x] = EMPTY
                                 i+=1
-        if(animals[i].energy==0 or animals[i].energy>2000):
-            animals[i].clear_from_grid()
-            del animals[i]
 
     if(len(animals)==0 or len(plants)==0):
         screen.blit(systemcollapse, systemcollapse_rect)
